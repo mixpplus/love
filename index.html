@@ -51,7 +51,7 @@
 			        </div>
                 </div>
                 <div id="clock-box">
-                    常浩<span class="STYLE1">与</span> 赵桂华<span class="STYLE1">已经相识了</span>
+                    常浩<span class="STYLE1">&nbsp;与&nbsp;</span>赵桂华<span class="STYLE1">&nbsp;已经相识了</span>
                   <div id="clock"></div>
               </div>
                 <canvas id="canvas" width="1100" height="680"></canvas>
@@ -126,6 +126,7 @@
             x = e.pageX - offset.left;
             y = e.pageY - offset.top;
             if (seed.hover(x, y)) {
+				audio.play();
                 hold = 0; 
                 canvas.unbind("click");
                 canvas.unbind("mousemove");
@@ -228,9 +229,9 @@
 <script>
 	<!-- var myAuto = document.getElementById('audio');   -->
                     <!-- myAuto.play();   -->
-	window.onclick=function(){
-		audio.play();
-	}
+	<!-- window.onclick=function(){ -->
+		<!-- audio.play(); -->
+	<!-- } -->
 	
     </script>	
 	</body></html>
